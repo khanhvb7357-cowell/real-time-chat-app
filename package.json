@@ -1,0 +1,35 @@
+{
+  "name": "real-time-chat-app",
+  "version": "1.0.0",
+  "description": "Tutorial: https://www.youtube.com/playlist?list=PLTyDDs5BP9JTf_f6zCjSS96CUA9vxXfIY.  Tech: ReactJs, Nodejs, Socket, MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \" npm run server \" \" npm run client \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanh96/real-time-chat-app.git"
+  },
+  "author": "VBK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khanh96/real-time-chat-app/issues"
+  },
+  "homepage": "https://github.com/khanh96/real-time-chat-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "concurrently": "^7.4.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "formidable": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20",
+    "validator": "^13.7.0"
+  }
+}
